@@ -1,51 +1,83 @@
-<!DOCTYPE html>
-<html>
-    <body><h1> Zachary Mucha</h1>
-        <p>
-        <a href="mailto:zmucha@lewisu.edu">zmucha@lewisu.edu</a><br>   
-        Discord userid: yotidemon<br>
+<!DOCTYPE html> 
+<html lang=en>
+    <link rel="stylesheet" href="style.css">
 
-        <img src="zach.jpeg" alt="Zach Mucha"></body></img>
+<title>Getting to know each other</title>
+
+<body>
+<h1> Zachary Mucha</h1>
+        <p>
+           <a href="mailto:zmucha@lewisu.edu">zmucha@lewis.edu</a>   
+<br>
+        Discord userid: yotidemon<br><br>
+
+        <img src="zach.jpeg" alt="Zach Mucha">
         </p>
 
-        <section>
+        
         <h2>Introduction</h2>       
-        <p>
+        <p class="p1"> 
            Hello, my name is Zach Mucha, I love to play and watch sports in my free time. 
            I am a huge Chicago Bears fan. Whenever I am at the lake, I love to go tubing. My family and I spend time doing all sorts of things, every sunday, we go to watch Bears games at my grandparents house. This is something I look forward to. The reason I chose my major Cybersecurity, is because 
            I have a huge interest for computers, and want to learn how to stop hackers from getting peoples personal information.
         </p>
+
         <h2>What I Hope to Learn in this Course </h2> 
-        <p> 
-            <ul>
+        
+            <ul class="a">
                 <li>More history of computing</li>
                 <li>Software Development</li>
                 <li>More programming languages</li>
               </ul>
-        </p> 
-        <h2>My Favorite Hobby / Activity</h2> 
-        <p> 
+        
+              <h2>My Favorite Hobby / Activity</h2> 
+              <p> 
+                  <button onclick="myFunction()">My Favorite Hobby</button>
+      
+                  <script>
+                  function myFunction() {
+                    alert("HOBBY:\nMy favorite hobby is definitely wakeboarding/tubing whenever I am at the lake.");
+                  }
+                  </script>
+      
+                  <!--My favorite hobby is definitely wakeboarding/tubing whenever I am at the lake.-->
+              </p>
+              
+              <p class="p1"> 
             My favorite hobby is definitely wakeboarding/tubing whenever I am at the lake. 
         </p>
         <h2>Fun Fact</h2>
-        A fun fact about me is I like to watch NFL games. 
-    </section>
-
-        <section>
-<h1>Greatest Innovation</h1>
-<ul style="list-style-type:square;">
+        <p class="p1">
+        <button onclick="myFunction()">Fun Fact</button>
+                <script>
+                function myFunction() {
+                  alert("FUN FACT\nA fun fact about me is I like to watch NFL games.");
+                }
+                </script>
+           
+           <!-- A fun fact about me is I like to watch NFL games. -->
+        
+<h2>Greatest Innovation</h2>
+<ul class="a">
     <li><a href="https://en.wikipedia.org/wiki/Internet">Internet</a> </li>
     <li><a href="https://en.wikipedia.org/wiki/Computer">PC/laptop computers</a> </li>
     <li><a href="https://en.wikipedia.org/wiki/Mobile_phone">Mobile phones</a> </li>
 </ul>
-
-    
-  
   
 
+        <h2> This Thursday Night Football Results</h2> 
+        <!--Bears record -->
+        <p id="bears"></p>
+        
+        <script>
+        let answer1 = "Game on Oct 5, Chicago Bears";
+        let answer2 = " vs ";
+        let answer3 = "Washington Commanders";
+        let answer4 = "40-20, Bears Win";
+        
+        document.getElementById("bears").innerHTML =
+        answer1 + answer2  + answer3 + "<br>" + answer4;
+        </script>
 
-  </ul>
-
-        </section>
     </body>
 </html>
